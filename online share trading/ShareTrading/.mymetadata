@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ShareTrading"
+  id="myeclipse.1331892455170"
+  context-root="/ShareTrading"
+  j2ee-spec="5.0"
+  archive="ShareTrading.war">
+  <attributes>
+    <attribute name="webrootdir" value="WebRoot" />
+  </attributes>
+</project-module>
+

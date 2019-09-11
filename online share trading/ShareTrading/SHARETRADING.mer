@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ERDiagram version="1.1">
+  <Connection session="Kritz" database="SHARETRADING" />
+  <Drawing gridVisible="false" snapOn="false" fastRouting="false" labelsVisible="true" />
+  <Tables>
+    <Table name="ACCOUNT">
+      <Drawing expanded="true" location="278,1095" dimensions="197,70" />
+      <Columns>
+        <Column name="ACCNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BALANCE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="BANK">
+      <Drawing expanded="true" location="0,1095" dimensions="233,90" />
+      <Columns>
+        <Column name="BANKNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="SAVINGACC_NO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEMAT_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="BIN$PtjeYKyxSpyhPtTlG11nxg==$0">
+      <Drawing expanded="true" location="282,900" dimensions="263,129" />
+      <Columns>
+        <Column name="COMP_ID" primary_key="true" foreign_key="false" required="true" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMPNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="SHAREAMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NO_OF_SHARE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMP_DATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="BROKER">
+      <Drawing expanded="true" location="93,358" dimensions="213,208" />
+      <Columns>
+        <Column name="BROKER_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="FIRST_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LAST_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ADDRESS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="GENDER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="E_MAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PHONE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="EXPERIENCE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LOGIN_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="COMPANY">
+      <Drawing expanded="true" location="406,338" dimensions="214,248" />
+      <Columns>
+        <Column name="COMP_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMPNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ADDRESS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="STATE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="OFFNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="FAXNO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="WEBSITE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="EMAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LOGIN_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DATEOFREG" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CUSTOMER">
+      <Drawing expanded="true" location="776,338" dimensions="213,248" />
+      <Columns>
+        <Column name="USER_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="FIRST_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="LAST_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="CITY" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="E_MAIL" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PHONE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DOB" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="DOREG" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="PINCODE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="LOGIN_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="ADDRESS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="CUSTOMER_DETAILS">
+      <Drawing expanded="true" location="0,900" dimensions="237,150" />
+      <Columns>
+        <Column name="USER_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="PANCARD_NO" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="BANK_NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BRANCH__NAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BANK_ACC_NO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DEMAT_ACC_NO" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="FINALALLOCATION">
+      <Drawing expanded="true" location="716,50" dimensions="180,88" />
+      <Columns>
+        <Column name="USER_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMP_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NO_SHARE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="LOGIN">
+      <Drawing expanded="true" location="392,686" dimensions="254,169" />
+      <Columns>
+        <Column name="LOGIN_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USERNAME" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="PASSWORD" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="USERTYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="SECURITYQUESTION" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="ANSWER" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="MORESHARE">
+      <Drawing expanded="true" location="590,900" dimensions="226,110" />
+      <Columns>
+        <Column name="COMP_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NO_SHARE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="TYPES" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="DATEOFTRANS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="REQUESTED">
+      <Drawing expanded="true" location="302,10" dimensions="233,167" />
+      <Columns>
+        <Column name="REQ_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="BROKER_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USER_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="COMP_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SHAREAMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="STATUS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="REMARK" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="SHARE_DETAILS">
+      <Drawing expanded="true" location="0,39" dimensions="202,109" />
+      <Columns>
+        <Column name="COMP_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="NO_SHARE" primary_key="false" foreign_key="false" required="true" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SHAREPRICE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DATEOFTRANS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+      </Columns>
+    </Table>
+    <Table name="TRANSACTION">
+      <Drawing expanded="true" location="996,0" dimensions="233,188" />
+      <Columns>
+        <Column name="TRANS_ID" primary_key="true" foreign_key="false" required="true" unique="true">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="USER_ID" primary_key="false" foreign_key="true" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="DATEOFTRANS" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="DATE" size="7" />
+        </Column>
+        <Column name="AMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="TYPE" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="BYWHOM" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="VARCHAR2" size="4000" />
+        </Column>
+        <Column name="COMP_ID" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+        <Column name="SHAREAMOUNT" primary_key="false" foreign_key="false" required="false" unique="false">
+          <Data type="NUMBER" size="22" />
+        </Column>
+      </Columns>
+    </Table>
+  </Tables>
+  <Relationships>
+    <Relationship name="BROKER_FK">
+      <Details primary_table="LOGIN" foreign_table="BROKER">
+        <PrimaryKeys>
+          <ColumnName name="LOGIN_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGIN_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="COMPANY_CON">
+      <Details primary_table="LOGIN" foreign_table="COMPANY">
+        <PrimaryKeys>
+          <ColumnName name="LOGIN_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGIN_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="CUSTOMER_FK">
+      <Details primary_table="LOGIN" foreign_table="CUSTOMER">
+        <PrimaryKeys>
+          <ColumnName name="LOGIN_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="LOGIN_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="FINALALLOCATION_FK">
+      <Details primary_table="CUSTOMER" foreign_table="FINALALLOCATION">
+        <PrimaryKeys>
+          <ColumnName name="USER_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USER_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="FINALALLOCATION_FK2">
+      <Details primary_table="COMPANY" foreign_table="FINALALLOCATION">
+        <PrimaryKeys>
+          <ColumnName name="COMP_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="COMP_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="REQUESTED_FK">
+      <Details primary_table="BROKER" foreign_table="REQUESTED">
+        <PrimaryKeys>
+          <ColumnName name="BROKER_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="BROKER_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="REQUESTED_FK3">
+      <Details primary_table="COMPANY" foreign_table="REQUESTED">
+        <PrimaryKeys>
+          <ColumnName name="COMP_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="COMP_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="REQUESTED_FK2">
+      <Details primary_table="CUSTOMER" foreign_table="REQUESTED">
+        <PrimaryKeys>
+          <ColumnName name="USER_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USER_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="SHARE_DETAILS_CON1">
+      <Details primary_table="COMPANY" foreign_table="SHARE_DETAILS">
+        <PrimaryKeys>
+          <ColumnName name="COMP_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="COMP_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+    <Relationship name="TRANSACTION_FK">
+      <Details primary_table="CUSTOMER" foreign_table="TRANSACTION">
+        <PrimaryKeys>
+          <ColumnName name="USER_ID" />
+        </PrimaryKeys>
+        <ForeignKeys>
+          <ColumnName name="USER_ID" />
+        </ForeignKeys>
+      </Details>
+      <Drawing routingType="0" />
+    </Relationship>
+  </Relationships>
+</ERDiagram>
+

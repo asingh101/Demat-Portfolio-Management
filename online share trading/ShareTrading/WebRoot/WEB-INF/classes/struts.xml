@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<package name="default" extends="struts-default">
+
+<action name="addbroker" class="pkg.LoginAction" method="addBroker">
+<result name="addbroker">/Sucsreg.jsp</result>
+</action>
+
+
+<action name="nextadd" class="pkg.LoginAction" method="nextAdd">
+<result name="nextadd">/Sucsreg.jsp</result>
+</action>
+
+<action name="adduser" class="pkg.LoginAction" method="addUser">
+<result name="adduser">/nextnewuser.jsp</result>
+</action>
+<action name="brkrshare" class="pkg.LoginAction" method="brkrshare">
+<result name="brkrshare">/sharedetails.jsp</result>
+</action>
+<action name="shr" class="pkg.LoginAction" method="shr">
+<result name="shr">/</result>
+</action>
+
+
+<action name="LoginAction" class="pkg.LoginAction" method="LoginData">
+		<result name="admin">/adminhome.jsp</result>
+		<result name="company">/Comp.jsp</result>
+		<result name="user">/custhome.jsp</result>
+		<result name="broker">/brokerhome.jsp</result>
+		<result name="loginfail">/user.jsp</result>
+	</action>
+	
+		<action name="addcomp" class="pkg.LoginAction" method="addComp">
+		<result name="addcomp">/Sucsreg.jsp</result>
+		</action>
+
+<action name="Deletecomp" class="pkg.LoginAction" method="Deletecomp">
+		<result name="Deletecompany">/Deletecompany.jsp</result>
+		
+			</action>
+<action name="delete" class="pkg.LoginAction" method="Delete">
+		<result name="Delete">/Delete.jsp</result>
+		</action>
+<action name="delcomp" class="pkg.LoginAction" method="Delcompany">
+		<result name="Delcompany">/company.jsp</result>
+		</action>
+
+
+<action name="approvedbroker" class="pkg.LoginAction" method="Approved1">
+<result name="Approved">/brokerhome.jsp</result>
+</action>
+
+<action name="Rejectbroker" class="pkg.LoginAction" method="Reject1">
+<result name="Reject">/user.jsp</result>
+</action>
+
+<action name="Editbr" class="pkg.LoginAction" method="Editbr">
+		<result name="Editbr">/Editbroker.jsp</result>
+		
+			</action>
+<action name="editbroker" class="pkg.LoginAction" method="Editbroker">
+		<result name="Editbroker">/Edbr.jsp</result>
+		</action>
+<action name="edbroker" class="pkg.LoginAction" method="Edbroker">
+		<result name="Edbroker">/brokermgmnt.jsp</result>
+		</action>
+<action name="deletebr" class="pkg.LoginAction" method="Deletebr">
+		<result name="Deletebr">/deletebroker.jsp</result>
+		
+			</action>
+<action name="deletebroker" class="pkg.LoginAction" method="Deletebroker">
+		<result name="Deletebroker">/Dltbr.jsp</result>
+		</action>
+<action name="delbroker" class="pkg.LoginAction" method="Delbroker">
+		<result name="Delbroker">/brokermgmnt.jsp</result>
+		</action>
+
+<action name="Approval" class="pkg.LoginAction" method="Approval">
+		<result name="Approval">/app.jsp</result>
+			</action>
+<action name="app" class="pkg.LoginAction" method="app">
+		<result name="app">/approvebr.jsp</result>
+		</action>
+<action name="appbr" class="pkg.LoginAction" method="Appbr">
+		<result name="appbr">/aprvmsg.jsp</result>
+		</action>
+<action name="rejbr" class="pkg.LoginAction" method="Rejbr">
+		<result name="rejbr">/brokermgmnt.jsp</result>
+		</action>
+<action name="apmail" class="pkg.LoginAction" method="Apmail">
+		<result name="Apmail">/adminhome.jsp</result>
+		</action>
+		<action name="compreg" class="pkg.LoginAction" method="Compreg">
+		<result name="Compreg">/Addshare.jsp</result>
+		</action>
+		
+		
+	<action name="Approvalcomp" class="pkg.LoginAction" method="Approval1">
+		<result name="Approval">/Appcmp.jsp</result>
+			</action>
+<action name="appcomp" class="pkg.LoginAction" method="appcomp">
+		<result name="app">/Approvecomp.jsp</result>
+		</action>	
+		<action name="approvecomp" class="pkg.LoginAction" method="Approvecomp">
+<result name="approve">/company.jsp</result>
+</action>
+
+<action name="rejcomp" class="pkg.LoginAction" method="Rejectcomp">
+<result name="rejectd">/adminhome.jsp</result>
+</action>
+
+	<action name="edcomp" class="pkg.LoginAction" method="edComp">
+	<result name="edComp">/Editcompany.jsp</result>
+     </action>
+
+<action name="editcomp" class="pkg.LoginAction" method="Editcomp">
+	<result name="Editcomp">/Comp.jsp</result>
+     </action>
+
+<action name="Deletecomp" class="pkg.LoginAction" method="DeleteComp">
+		<result name="DeleteComp">/Deletecompany.jsp</result>
+			</action>
+				
+	<action name="deleteco" class="pkg.LoginAction" method="deleteCo">
+		<result name="deleteCo">/Delete.jsp</result>
+			</action>
+				
+	<action name="delcomp" class="pkg.LoginAction" method="delComp">
+		<result name="delComp">/company.jsp</result>
+			</action>
+<action name="Editshare" class="pkg.LoginAction" method="Editshare">
+		<result name="Editshare">/Editsh.jsp</result>
+		</action>
+
+
+<action name="edshare" class="pkg.LoginAction" method="Edshare">
+		<result name="Edshare">/Comp.jsp</result>
+		</action>
+
+<action name="Apu" class="pkg.LoginAction" method="apu">
+		<result name="Apu">/apruser.jsp</result>
+			</action>
+<action name="appuser" class="pkg.LoginAction" method="Appuser">
+		<result name="Appuser">/Approveuser.jsp</result>
+		</action>	
+<action name="approveuser" class="pkg.LoginAction" method="Approveuser">
+<result name="Apu">/aprvmsg.jsp</result>
+</action>
+
+<action name="rejuser" class="pkg.LoginAction" method="Rejuser">
+<result name="Rejuser">/Adminuser.jsp</result>
+</action>
+<action name="brkrdetail" class="pkg.LoginAction" method="Brkrdetail">
+<result name="Brkrdetail">/Brkruser.jsp</result>
+</action>
+<action name="brus" class="pkg.LoginAction" method="Brus">
+<result name="Brus">/brdetail.jsp</result>
+</action>
+
+<action name="cmpdetail" class="pkg.LoginAction" method="Cmpdetail">
+<result name="Cmpdetail">/cmpuser.jsp</result>
+</action>
+<action name="cmus" class="pkg.LoginAction" method="Cmus">
+<result name="Cmus">/compdetails.jsp</result>
+</action>
+<action name="trans" class="pkg.LoginAction" method="Trans">
+<result name="Trans">/trans_own.jsp</result>
+</action>
+<action name="procd" class="pkg.LoginAction" method="Procd">
+<result name="Procd">/trans_own1.jsp</result>
+<result name="Procd1">/trans_own2.jsp</result>
+</action>
+<action name="purchase" class="pkg.LoginAction" method="Purchase">
+<result name="purfail">/Transact_management.jsp</result>
+<result name="purpass">/Transact_management.jsp</result>
+</action>
+
+<action name="sale" class="pkg.LoginAction" method="Sale">
+<result name="salefail">/Transact_management.jsp</result>
+<result name="salepass">/Transact_management.jsp</result>
+</action>
+
+<action name="self" class="pkg.LoginAction" method="Self">
+<result name="Self">/self.jsp</result>
+</action>
+
+<action name="proc" class="pkg.LoginAction" method="Proc">
+<result name="Proc">/self1.jsp</result>
+<result name="Proc1">/self2.jsp</result>
+</action>
+<action name="purchase1" class="pkg.LoginAction" method="Purchase1">
+<result name="purfail">/Transact_management.jsp</result>
+<result name="purpass">/Transact_management.jsp</result>
+</action>
+
+<action name="sale1" class="pkg.LoginAction" method="Sale1">
+<result name="salefail">/Transact_management.jsp</result>
+<result name="salepass">/Transact_management.jsp</result>
+</action>
+<action name="view" class="pkg.LoginAction" method="View">
+<result name="view">/viewshare.jsp</result>
+</action>
+<action name="cust" class="pkg.LoginAction" method="Cust">
+<result name="Cust">/custbrkr.jsp</result>
+</action>
+<action name="custmr" class="pkg.LoginAction" method="Custmr">
+<result name="Custmr">/custdet.jsp</result>
+</action>
+
+<action name="brokmr" class="pkg.LoginAction" method="Brokmr">
+<result name="Custmr">/brkdetail.jsp</result>
+</action>
+<action name="editcust" class="pkg.LoginAction" method="EditCust">
+<result name="EditCust">/editcust.jsp</result>
+</action>
+<action name="edituser" class="pkg.LoginAction" method="Edituser">
+<result name="Edituser">/custhome.jsp</result>
+</action>
+<action name="seehistory" class="pkg.LoginAction" method="seeHistory">
+<result name="Share">/share.jsp</result>
+</action>
+
+<action name="thbroker" class="pkg.LoginAction" method="Trans">
+<result name="Trans">/trans_own.jsp</result>
+</action>
+
+<action name="proced" class="pkg.LoginAction" method="reqBroker">
+<result name="success">/Transact_management.jsp</result>
+</action>
+
+<action name="seedetails" class="pkg.LoginAction" method="seeDetails">
+<result name="success">/seedetails.jsp</result>
+</action>
+
+<action name="brksale" class="pkg.LoginAction" method="brkSale">
+<result name="success">/brksale.jsp</result>
+</action>
+
+<action name="brkpurchase" class="pkg.LoginAction" method="brkPurchase">
+<result name="success">/brkpurchase.jsp</result>
+</action>
+
+<action name="saleprocess" class="pkg.LoginAction" method="saleProcess">
+<result name="success">/brksale1.jsp</result>
+</action>
+
+<action name="purchaseprocess" class="pkg.LoginAction" method="purchaseProcess">
+<result name="success">/brkpurchase1.jsp</result>
+</action>
+
+<action name="saleprocessed" class="pkg.LoginAction" method="saleProcessed">
+<result name="success">/Transbrkr.jsp</result>
+</action>
+
+<action name="purchaseprocessed" class="pkg.LoginAction" method="purchaseProcessed">
+<result name="success">/Transbrkr.jsp</result>
+</action>
+
+<action name="pricehistory" class="pkg.LoginAction" method="historyComp">
+<result name="success">/seecompany1.jsp</result>
+</action>
+
+<action name="purchasehistory" class="pkg.LoginAction" method="historyComp">
+<result name="success">/seecompany2.jsp</result>
+</action>
+
+<action name="salehistory" class="pkg.LoginAction" method="historyComp">
+<result name="success">/seecompany3.jsp</result>
+</action>
+
+<action name="pricehistory11" class="pkg.LoginAction" method="compHistory">
+<result name="success">/seecompanygraph1.jsp</result>
+</action>
+
+<action name="purchasehistory11" class="pkg.LoginAction" method="compHistory">
+<result name="success">/seecompanygraph2.jsp</result>
+</action>
+
+<action name="salehistory11" class="pkg.LoginAction" method="compHistory">
+<result name="success">/seecompanygraph3.jsp</result>
+</action>
+
+ <!-- FEEDBACK -->
+      
+       
+        <action name="givefeedback1" class="pkg.LoginAction" method="GiveFeedback1">
+		<result name="givefeed1">/Broker_Feedback_Mgt.jsp</result>
+		<result name="givefeed2">/Customer_Feedback_Mgt.jsp</result>
+		<result name="givefeed3">/User_Feedback_Mgt.jsp</result>
+		<result name="feedbackfail">/user.jsp</result>
+		</action>
+		
+		<action name="seeFeed" class="pkg.LoginAction" method="divSeeFeedback"> 
+		<result name="SeeFeedback">/Admin_See_Feedback.jsp</result>
+		</action>
+		
+		<action name="viewfeedback" class="pkg.LoginAction" method="viewFeedback">
+		<result name="viewnfeedback">/Admin_View_Feedback.jsp</result>
+		</action>
+		<action name="replyfeedback1" class="pkg.LoginAction" method="postfeed">
+		<result name="post">/Admin_Reply_Feedback.jsp</result>
+		</action>
+		<action name="replyfeedback" class="pkg.LoginAction" method="replyFeedback">
+			<result name="replyfeedback">/Admin_See_Feedback.jsp</result>		
+		</action>
+			<action name="replysee" class="pkg.LoginAction" method="replysee">
+		<result name="replysee">/User_See_Feedback_Table.jsp</result>
+		<result name="replysee2">/Customer_See_Feedback_Table.jsp</result>
+		<result name="replysee1">/Broker_See_Feedback_Table.jsp</result>
+		</action>
+		
+		<action name="reply1" class="pkg.LoginAction" method="reply1">
+		<result name="reply11">/User_Content_Admin_Feedback.jsp</result>
+		<result name="reply12">/Customer_Content_Admin_Feedback.jsp</result>
+		<result name="reply13">/Broker_Content_Admin_Feedback.jsp</result>
+		</action>
+		<action name="reply2" class="pkg.LoginAction" method="reply2">
+		<result name="reply21">/User_View_Feedback.jsp</result>
+		<result name="reply22">/Customer_View_Feedback.jsp</result>
+		<result name="reply23">/Broker_View_Feedback.jsp</result>
+		</action> 
+		
+		<action name="tips" class="pkg.LoginAction" method="Tips">
+		<result name="tips">/adminhome.jsp</result>
+		</action>
+		
+		<action name="viewtips" class="pkg.LoginAction" method="viewTips">
+		<result name="tips">/viewtips.jsp</result>
+		</action>
+		
+		<action name="Logout" class="pkg.LoginAction" method="Logout">
+			<result name="Logout">Logout.jsp</result></action>
+			
+		<action name="euserloginn" class="pkg.LoginAction" method="euserlogin">
+			<result name="success">user.jsp</result></action>
+			
+		<action name="compsharedetail" class="pkg.LoginAction" method="compShareDetail">
+		<result name="success">/viewsharedetail.jsp</result>
+		</action>
+		
+		<action name="riskcal" class="pkg.LoginAction" method="riskCal">
+		<result name="riskCal">/riskcalculation.jsp</result>
+		</action>
+		
+		<action name="rcal" class="pkg.LoginAction" method="rCal">
+		<result name="rCal">/risk.jsp</result>
+		</action>
+		
+		<action name="forget" class="pkg.LoginAction" method="forgetPassword">
+		<result name="success">/newpassword.jsp</result>
+		<result name="abc">/forgetpass.jsp</result>
+		</action>
+		
+		<action name="changepassw" class="pkg.LoginAction" method="changePwd">
+		<result name="success">/newpassword.jsp</result>
+		</action>
+</package>
+</struts>    
